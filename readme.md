@@ -1,6 +1,6 @@
 # Calculator
 
-Calculator using Tkinter.
+Calculator using Tkinter
 
 ### Run
 ```bash
