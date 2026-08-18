@@ -1,6 +1,6 @@
 # Calculator
 
-This is basic calculator you can use on terminal
+Calculator using Tkinter.
 
 ### Run
 ```bash
