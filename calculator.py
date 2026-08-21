@@ -5,11 +5,11 @@ from tkinter.constants import SUNKEN
 win = tk.Tk()
 win.title('Calculator')
 
-frame = tk.Frame(win, bg = "skyblue", padx = 10)
+frame = tk.Frame(win, bg="skyblue", padx=10)
 frame.pack()
 
-entry = tk.Entry(frame, relief = SUNKEN, borderwidth = 3, width = 30)
-entry.grid(row = 0, column = 0, columnspan = 3, ipady = 2, pady = 2)
+entry = tk.Entry(frame, relief=SUNKEN, borderwidth=3, width=30)
+entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
 
 def click(num):
     entry.insert(tk.END, num)
@@ -34,9 +34,9 @@ buttons = [
 ]
 
 for txt, r, c in buttons:
-    tk.Button(frame, text = txt, padx = 15, pady = 5, width = 3, command = lambda t = txt: click(t)).grid(row = r, column = c, pady = 2)
+    tk.Button(frame, text=txt, padx=15, pady=5, width=3, command=lambda t=txt: click(t)).grid(row=r, column=c, pady=2)
 
-tk.Button(frame, text = "Clear", padx = 15, pady = 5, width = 12, command = clear).grid(row = 6, column = 1, columnspan = 2, pady = 2)
-tk.Button(frame, text = "=", padx = 15, pady = 5, width = 9, command = equal).grid(row = 7, column = 0, columnspan = 3, pady = 2)
+tk.Button(frame, text="Clear", padx=15, pady=5, width=12, command=clear).grid(row=6, column=1, columnspan=2, pady=2)
+tk.Button(frame, text="=", padx=15, pady=5, width=9, command=equal).grid(row=7, column=0, columnspan=3, pady=2)
 
 win.mainloop()
